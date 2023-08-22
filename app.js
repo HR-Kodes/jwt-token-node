@@ -55,12 +55,9 @@ app.post("/register", async (req, res) => {
   } catch (err) {
     console.log(err);
   }
-  // Our register logic ends here
 });
 
-// Login
 app.post("/login", async (req, res) => {
-  // Our login logic starts here
   try {
     // Get user input
     const { email, password } = req.body;
